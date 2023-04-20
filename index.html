@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SpermaBank</title>
+    <link rel="shortcut icon" href="img/pngwing.com.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div id="okno" class="okno">
+    <input class="sex" type="number" id="input" />
+    <button class="gay" onclick="popovniti()">acept</button>
+  </div>
+
+  <div id="perekaz" class="perekaz">
+    <input
+      type="input"
+      id="nomer-karti"
+      placeholder="Enter cardholder numbers or name"
+    />
+    <input type="number" id="suma-perekazu" placeholder="Enter the transfer amount" />
+    <button onclick="perekaz()" class="groshi">acept</button>
+  </div>
+
+  <body>
+    <div class="head"><p class="p1">SpermaBank</p></div>
+
+    <img class="profile" src="./img/person.png" />
+
+    <div><p class="p2">BALANCE</p></div>
+
+    
+      <span id="balance" class="balanc">0</span> <span class="grn">₴</span>
+    
+
+    <!-- <div class="<span id="balance>0</span></div> -->
+
+    <img onclick="hide_transfer()" class="transfer" src="./img/transfer.png" />
+
+    <img onclick="hide()" class="paywallet" src="./img/paywallet.png" />
+
+    <div><p class="p3">TRANSITION</p></div>
+
+    <div><p class="p4">TO PAY THE CARD</p></div>
+
+    <div class="history">
+      <div><p class="p5">TRANSITIONS HISTORY</p></div>
+    </div>
+
+    <script src="./js.js"></script>
+  </body>
+</html>
