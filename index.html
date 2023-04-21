@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>SpermaBank</title>
+    <title>BetaBank</title>
     <link rel="shortcut icon" href="img/pngwing.com.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,20 +26,45 @@
       id="nomer-karti"
       placeholder="Enter cardholder numbers or name"
     />
-    <input type="number" id="suma-perekazu" placeholder="Enter the transfer amount" />
+    <input
+      type="number"
+      id="suma-perekazu"
+      placeholder="Enter the transfer amount"
+    />
     <button onclick="perekaz()" class="groshi">acept</button>
   </div>
 
-  <body>
-    <div class="head"><p class="p1">SpermaBank</p></div>
+  <div id="profile-okno">
+    <div  class="flip-card">
+      <div onclick="exitprofile()" class="flip-card-inner">
+        <div class="flip-card-front">
+          <p class="ucard">YOUR CARD</p>
+          <h1 class="ourbank">BetaBank</h1>
+          <p class="numbercard">0000 0000 0000 0000</p>
+          <img class="mastercard" src="./img/mastercard.png" />
+        </div>
+        <div class="flip-card-back">
+          <p class="danger">Do not give this information to anyone!</p>
+          <div class="cvcdiv">
+          <p class="cvc">cvc</p> 
+          <input class="typecvc" type="text"> 
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <img class="profile" src="./img/person.png" />
+  <body>
+    <img class="wing" onclick="obmin()" src="./img/wing.png" />
+
+    <div class="head"><p class="p1">BetaBank</p></div>
+
+    <img class="profile" onclick="profile()" src="./img/person.png" />
 
     <div><p class="p2">BALANCE</p></div>
 
-    
-      <span id="balance" class="balanc">0</span> <span class="grn">₴</span>
-    
+    <span id="balance" class="balanc">0</span>
+    <span id="grn" class="grn">₴</span>
 
     <!-- <div class="<span id="balance>0</span></div> -->
 

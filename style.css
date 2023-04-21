@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    width: 100%;
+    width: 97.5%;
     height: 857px;
     background:linear-gradient(#3F294B, #6F69BF);
     background-repeat: no-repeat;
@@ -15,27 +15,40 @@ body {
     font-size: 40px;
     font-weight: 600;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .p1 {
-    margin-left: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50% auto;
     margin-top: 0px;
 }
 
 .profile {
     width: 30px;
     height: 30px;
-    margin-left: 200px;
+    margin-left: 48.9%;
     margin-top: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .p2 {
-    margin-left: 177px;
+    margin-left: 50% auto;
     margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -92,6 +105,7 @@ body {
     width: 90px;
     height: 18px;
     color: #fff;
+
 }
 
 .p4 {
@@ -209,4 +223,120 @@ body {
     color: #fff;
     margin: 20px 30%;
     transform: scale(95%);
+}
+
+#nomer-karti {
+    background-color: #a993c200;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    width: 90%;
+    height: 50px;
+    padding-left: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin:  20px 0%;
+}
+
+#profile-okno{
+    width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        background-color: rgba(51, 51, 51, 0.3);
+        display: none;
+        color: white;
+
+      justify-content: center;
+      align-items: center;
+
+
+}
+.flip-card {
+    background-color: #1e1e1e;
+    width: 300px;
+    height: 180px;
+    border: 3.5px solid #000000;
+    border-radius: 8px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.flip-card-back {
+    background-color: #1e1e1e;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.wing {
+    width: 33px;
+    height: 33px;
+    margin: 15px 8%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.ucard {
+    margin-left: 63%;
+    margin-top: 4px;
+}
+
+.mastercard {
+    width: 35px;
+    height: 35px;
+    margin: -5px 83%;
+}
+
+.ourbank {
+    font-size: 22px;
+    margin: -30px;
+    margin-right: 145px;
+}
+
+.numbercard {
+    margin: 60px;
+}
+
+.cvc {
+    margin-left: 70%;
+    margin-top: 120px;
+}
+
+.typecvc {
+    width: 33px;
+    height: 15px;
+    margin-top: 125px;
+    margin-left: 14px;
+}
+
+.cvcdiv {
+    display: flex;
 }
